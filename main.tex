@@ -1942,7 +1942,7 @@ If $G$ has more structure (e.g. it is a \emph{Lie group}) and $X$ is a manifold,
 \end{notation}
 
 \begin{definition}\label{def:fiber-bundle} 
-Let $G$ be a topological group, fix a space $F$ equipped with a faithful\footnote{Hirzebruch uses the word \emph{effective} for the group action, meaning if $g\cdot f = f$ for all $f$ then $g=e$. We use the word \emph{faithful} for this same notion.} continuous action of $G$, and let $X$ be a space. We define a \emph{fiber bundle over $X$ with fiber $F$ and structure group $G$} to be a continuous map $\pi \colon W \to X$ if there exists additional data:
+Let $G$ be a topological group, fix a space $F$ equipped with a faithful\footnote{Hirzebruch uses the word \emph{effective} for the group action, meaning if $g\cdot f = f$ for all $f$ then $g=e$. We use the word \emph{faithful} for this same notion.} continuous action of $G$, and let $X$ be a space. Let  We define a \emph{fiber bundle over $X$ with fiber $F$ and structure group $G$} to be a continuous map $\pi \colon W \to X$ if there exists additional data:
 \begin{itemize}
     \item an open cover $\left\{ U_i \right\}$ of $X$
     \item homeomorphisms $h_i \colon \pi^{-1}(U_i) \to U_i \times F$ over $U_i$
@@ -1952,7 +1952,7 @@ so that
 \begin{align*}
     (h_i h_j^{-1})(u,f) = u\cdot g_{ij}(u)f
 \end{align*}
-for all $u \in U_i \cap U_j$ and $f\in F$.
+for all $u \in U_i \times U_j$ and $f\in F$.
 \end{definition}
 
 \begin{terminology} If we want to refer to the cover $\mathcal{U}$, we will say the fiber bundle is \emph{trivialized over $\mathcal{U}$}. The idea being that, via the homeomorphisms $\pi_i$, over each $U_i \in \mathcal{U}$ our fiber bundle does indeed look trivial.
